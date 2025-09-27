@@ -1,1 +1,107 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>BYTEX AVIATOR BET CALCULATED</title>    <style>        body {            background-image: url('https://dl.dropboxusercontent.com/scl/fi/opptdtk92bl4jvw6t31yq/IMG-20250218-WA0007.jpg?rlkey=4br287q5onf9v4myjb7usbk1d&st=rhx8f9zt');            background-size: cover;            background-position: center;            color: white;            font-family: Arial, sans-serif;            text-align: center;        }        .container {            max-width: 400px;            margin: 50px auto;            padding: 20px;        }        .input-group {            margin: 10px 0;        }        .input-group label {            display: block;            margin-bottom: 5px;        }        .input-group input {            width: 100%;            padding: 10px;            border: none;            border-radius: 5px;            font-size: 16px;        }        .button {            background-color: red;            color: white;            padding: 10px;            border: none;            width: 100%;            font-size: 16px;            cursor: pointer;            margin-top: 15px;            border-radius: 5px;        }        .result {            margin-top: 20px;            font-size: 18px;            font-weight: bold;            background: white;            color: black;            padding: 10px;            border-radius: 5px;            display: inline-block;        }    </style></head><body>    <div class="container">        <h2 style="background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; color: transparent; padding: 15px; border-radius: 10px; display: inline-block; border: 2px solid white; background-color: black;">BYTEX AVIATOR BET CALCULATED</h2>        <div class="input-group">            <label style="color: black; background-color: yellow; padding: 5px; border-radius: 5px; display: inline-block;">යොදන මුදල් ප්‍රමාණය</label>            <input type="number" id="initialBet" value="1000">        </div>        <div class="input-group">            <label style="color: black; background-color: yellow; padding: 5px; border-radius: 5px; display: inline-block;">CRASH OUT කරන ප්‍රමාණය</label>            <input type="number" id="multiplier" value="2.0">        </div>        <div class="input-group">            <label style="color: black; background-color: yellow; padding: 5px; border-radius: 5px; display: inline-block;">වට ප්‍රමාණය</label>            <input type="number" id="numBets" value="10">        </div>        <button class="button" onclick="calculateStrategy()">Calculate</button>        <div class="result" id="result"></div>        <div style="margin-top: 20px; padding: 10px; background: white; color: black; border-radius: 5px; display: inline-block; font-weight: bold;">BYTEX WHATSAPP OWNER +94 76 732 4225</div>        <div class="time-box" style="background: white; color: black; padding: 10px; margin-top: 20px; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">            <span id="liveDateTime"></span>        </div>    </div>    <script>        function calculateStrategy() {            let initialBet = parseFloat(document.getElementById('initialBet').value);            let multiplier = parseFloat(document.getElementById('multiplier').value);            let numBets = parseInt(document.getElementById('numBets').value);                        let totalAmount = initialBet;            let betHistory = `Bet 1: ${initialBet} LKR\n`;                        for (let i = 1; i < numBets; i++) {                initialBet *= multiplier;                totalAmount += initialBet;                betHistory += `Bet ${i + 1}: ${initialBet.toFixed(2)} LKR\n`;            }                        document.getElementById('result').innerText = `Total Amount: ${totalAmount.toFixed(2)} LKR\n\n${betHistory}`;        }                function updateDateTime() {            let now = new Date();            let dateTimeString = now.toLocaleString();            document.getElementById('liveDateTime').innerText = dateTimeString;        }        setInterval(updateDateTime, 1000);        updateDateTime();    </script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYTEX AVIATOR BET CALCULATED</title>
+    <style>
+        body {
+            background-image: url('https://dl.dropboxusercontent.com/scl/fi/opptdtk92bl4jvw6t31yq/IMG-20250218-WA0007.jpg?rlkey=4br287q5onf9v4myjb7usbk1d&st=rhx8f9zt');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background: white;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; color: transparent; padding: 15px; border-radius: 10px; display: inline-block; border: 2px solid white; background-color: black;">BYTEX AVIATOR BET CALCULATED</h2>
+        <div class="input-group">
+            <label style="color: black; background-color: yellow; padding: 5px; border-radius: 5px; display: inline-block;">යොදන මුදල් ප්‍රමාණය</label>
+            <input type="number" id="initialBet" value="1000">
+        </div>
+        <div class="input-group">
+            <label style="color: black; background-color: yellow; padding: 5px; border-radius: 5px; display: inline-block;">CRASH OUT කරන ප්‍රමාණය</label>
+            <input type="number" id="multiplier" value="2.0">
+        </div>
+        <div class="input-group">
+            <label style="color: black; background-color: yellow; padding: 5px; border-radius: 5px; display: inline-block;">වට ප්‍රමාණය</label>
+            <input type="number" id="numBets" value="10">
+        </div>
+        <button class="button" onclick="calculateStrategy()">Calculate</button>
+        <div class="result" id="result"></div>
+        <div style="margin-top: 20px; padding: 10px; background: white; color: black; border-radius: 5px; display: inline-block; font-weight: bold;">BYTEX WHATSAPP OWNER +94 72 132 6398</div>
+        <div class="time-box" style="background: white; color: black; padding: 10px; margin-top: 20px; border-radius: 5px; font-size: 16px; font-weight: bold; display: inline-block;">
+            <span id="liveDateTime"></span>
+        </div>
+    </div>
+    <script>
+        function calculateStrategy() {
+            let initialBet = parseFloat(document.getElementById('initialBet').value);
+            let multiplier = parseFloat(document.getElementById('multiplier').value);
+            let numBets = parseInt(document.getElementById('numBets').value);
+            
+            let totalAmount = initialBet;
+            let betHistory = `Bet 1: ${initialBet} LKR\n`;
+            
+            for (let i = 1; i < numBets; i++) {
+                initialBet *= multiplier;
+                totalAmount += initialBet;
+                betHistory += `Bet ${i + 1}: ${initialBet.toFixed(2)} LKR\n`;
+            }
+            
+            document.getElementById('result').innerText = `Total Amount: ${totalAmount.toFixed(2)} LKR\n\n${betHistory}`;
+        }
+        
+        function updateDateTime() {
+            let now = new Date();
+            let dateTimeString = now.toLocaleString();
+            document.getElementById('liveDateTime').innerText = dateTimeString;
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>
